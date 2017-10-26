@@ -1,0 +1,27 @@
+{
+  "name": "tooltip",
+  "version": "1.0.0",
+  "description":
+    "A website with tooltips for people who want to have a better understanding of what their interactions do.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/James-Lopez/tooltip.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/James-Lopez/tooltip/issues"
+  },
+  "homepage": "https://github.com/James-Lopez/tooltip#readme"
+}
