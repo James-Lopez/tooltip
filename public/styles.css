@@ -32,12 +32,12 @@ button {
   right: 7px;
 }
 
-[tooltip] {
+[data-tooltip] {
   position: relative;
   display: inline-block;
 }
 
-[tooltip]::before {
+[data-tooltip]::before {
   content: '';
   position: absolute;
   top: -6px;
@@ -47,32 +47,32 @@ button {
   opacity: 0;
 }
 
-[tooltip='Left']::before {
+[data-tooltip='Left']::before {
   left: 0%;
   top: 50%;
   margin-left: -12px;
   transform: translateY(-50%) rotate(-90deg);
 }
 
-[tooltip='Above']::before {
+[data-tooltip='Above']::before {
   left: 50%;
 }
 
-[tooltip='Below']::before {
+[data-tooltip='Below']::before {
   top: 100%;
   margin-top: 8px;
   transform: translateX(-50%) translateY(-100%) rotate(-180deg);
 }
 
-[tooltip='Right']::before {
+[data-tooltip='Right']::before {
   left: 100%;
   top: 50%;
   margin-left: 1px;
   transform: translateY(-50%) rotate(90deg);
 }
 
-[tooltip]::after {
-  content: attr(tooltip);
+[data-tooltip]::after {
+  content: attr(data-tooltip);
   position: absolute;
   left: 50%;
   top: -6px;
@@ -88,31 +88,31 @@ button {
   color: white;
 }
 
-[tooltip='Left']::after {
+[data-tooltip='Left']::after {
   left: 0%;
   top: 50%;
   margin-left: -8px;
   transform: translateX(-100%) translateY(-50%);
 }
 
-[tooltip='Above']::after {
+[data-tooltip='Above']::after {
   left: 50%;
 }
 
-[tooltip='Below']::after {
+[data-tooltip='Below']::after {
   top: 100%;
   margin-top: 8px;
   transform: translateX(-50%) translateY(0%);
 }
 
-[tooltip='Right']::after {
+[data-tooltip='Right']::after {
   left: 100%;
   top: 50%;
   margin-left: 8px;
   transform: translateX(0%) translateY(-50%);
 }
 
-[tooltip]:hover::after,
-[tooltip]:hover::before {
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before {
   opacity: 1;
 }
