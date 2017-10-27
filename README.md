@@ -15,3 +15,5 @@ $ npm run
 * Node.js
 
 ## Screenshot
+![tooltip-issue-1](https://user-images.githubusercontent.com/31416056/32078158-baed0342-ba5a-11e7-827f-b7eff71150c9.gif)
+
